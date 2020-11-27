@@ -1,17 +1,98 @@
-*{margin: 0; padding: 0;}
-
-body
-    {
-        position: absolute; left: 50%; top: 50%; 
-        transform: translate(-50%, -50%); 
-        text-align: center;
-        background: rgb(219, 176, 111);
-    }
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+body {
+    background-image: url(../image/settings/background.png);
     
-.wrap
-    {
-        width: 100%;
-        height: 500px;
-        max-width: 100%;
-        margin:0 auto;
-    }
+}
+.frame {
+    position: absolute;
+    left: 16%;
+    top:3%;
+    background-color: #FBE3BE;
+    width: 70%; 
+    height: 94%;
+    box-shadow: 0 6px 15px 0 rgb(65, 50, 32);
+}
+.container{
+    width: 100%;
+    height: 100%; 
+}
+.logo{
+    top : 10%;
+    left:20%;
+    position: absolute;
+    width: 60%;
+    height: 48%;
+}
+.start_button{
+    font-family: 'Black Han Sans', sans-serif;
+    width: 48%;
+    height: 14%;
+    font-size: 4vw;
+    padding: 15px 32px;
+    background-color: peru;
+    color: rgb(95, 63, 30);
+    top:57%;
+    left: 27%;
+    position: absolute;
+    opacity: 1;
+    transition-duration: 0.2s;
+    border: none;
+    box-shadow: 0 8px 19px 0  rgb(128, 88, 41);
+}
+.start_button:hover{
+    opacity: 0.8;
+}
+.howplay_button{
+    font-family: 'Black Han Sans', sans-serif;
+    width: 48%;
+    height: 14%;
+    font-size: 4vw;
+    padding: 15px 32px;
+    background-color: peru;
+    color: rgb(95, 63, 30);
+    top:73%;
+    left:27%;
+    position: absolute;
+    opacity: 1;
+    transition-duration: 0.2s;
+    border: none;
+    box-shadow: 0 8px 19px 0 rgb(128, 88, 41);
+} 
+
+.howplay_button:hover{
+    opacity: 0.8;
+}
+
+.text{
+    font-family: 'Black Han Sans', sans-serif; 
+    color: rgb(112, 60, 36);
+    font-size:2vw;
+}
+.tt_box{
+    display: none;
+    position: absolute;
+    width: 125px;
+    padding: 10px;
+    border-radius: 10%;
+    background: rgb(201, 126, 83);
+    color: #fff;
+    font-size: 14px;
+}
+
+.tt_box:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: solid transparent;
+    border-color: rgba(51, 51, 51, 0);
+    border-bottom-color:  rgb(201, 126, 83);
+    border-width: 10px;
+    content: " ";
+  }
+
+  span:hover + p.tt_box {
+    display: block;
+  }
+
+
